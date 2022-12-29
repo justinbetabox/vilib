@@ -6,17 +6,10 @@ import datetime
 print('Launching ...')
 import cv2
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
-from picamera.array import PiRGBArray
-from picamera import PiCamera
 from threading import Thread
 from time import sleep
 import tflite_runtime.interpreter as tflite
 from pyzbar import pyzbar
-
-import threading
-from multiprocessing import Process, Manager
-
 from flask import Flask, render_template, Response
 
 kernel_5 = np.ones((5,5),np.uint8)

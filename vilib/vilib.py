@@ -10,7 +10,7 @@ from threading import Thread
 from time import sleep
 import tflite_runtime.interpreter as tflite
 from pyzbar import pyzbar
-from flask import Flask, render_template, Response
+from flask imporwt Flask, render_template, Response
 
 kernel_5 = np.ones((5,5),np.uint8)
 
