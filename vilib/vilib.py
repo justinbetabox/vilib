@@ -10,7 +10,7 @@ from threading import Thread
 from time import sleep
 import tflite_runtime.interpreter as tflite
 from pyzbar import pyzbar
-from flask imporwt Flask, render_template, Response
+from flask import Flask, render_template, Response
 
 kernel_5 = np.ones((5,5),np.uint8)
 
@@ -59,7 +59,7 @@ def color_detect(img):
     return img
 
 class Vilib(object): 
-    def __init__(self, src=0):
+    def __init__(self, src=-1):
         self.color_detect = False
         self.human_face_detect = False
         self.capture = cv2.VideoCapture(src)
@@ -89,3 +89,6 @@ class Vilib(object):
             yield (b'--frame\r\n'
                 b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
             cv2.waitKey(int(1/30*1000))
+    
+    def endCapture(self):
+        self.capture.release()
