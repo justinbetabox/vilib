@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vilib"
+version = "0.0.1"
+description = "Simple processing-only vision helpers (RGB in → RGB out)"
+requires-python = ">=3.8"
+dependencies = ["opencv-python"]
+
+[tool.setuptools.packages.find]
+where = ["."]

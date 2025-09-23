@@ -1,0 +1,10 @@
+pyproject.toml
+vilib/__init__.py
+vilib/colors.py
+vilib/face.py
+vilib/vilib.py
+vilib.egg-info/PKG-INFO
+vilib.egg-info/SOURCES.txt
+vilib.egg-info/dependency_links.txt
+vilib.egg-info/requires.txt
+vilib.egg-info/top_level.txt

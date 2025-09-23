@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: vilib
+Version: 0.0.1
+Summary: Simple processing-only vision helpers (RGB in → RGB out)
+Requires-Python: >=3.8
+Requires-Dist: opencv-python
